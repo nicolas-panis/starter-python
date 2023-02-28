@@ -20,13 +20,6 @@ def myLower(str):
 
 def myTitle(str):
     new_string = ""
-    # for i in str:
-    #     if cpt == 0:
-    #         if ord(i) >=97 and ord(i)< 123:
-    #             new_string+=chr(ord(i)-32)
-    #     elif i == " ": 
-    #         new_string+=chr(ord(i+1)-32)
-    #     cpt += 1
     for i in range(len(str)):
         if i == 0:
             if ord(str[i]) >= 97 and ord(str[i]) < 123:
@@ -49,12 +42,6 @@ def myClean(str):
         else: 
             new_string+= str[i]
     return new_string
-
-
-
-
-
-
 
 fc = input("Choissiez la fonction désirée entre upper, lower, title ou clean: ")
 
