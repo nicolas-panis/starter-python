@@ -37,12 +37,16 @@ def myClean(str):
         if i == 0:
             if str[i] == " ":
                 pass
+            else:
+                new_string+= str[i]
         elif str[i-1] == " " and str[i] == " ":
             pass
         else: 
             new_string+= str[i]
     return new_string
-
+str = "argent"
+str = str.replace("a","o")
+print(str)
 fc = input("Choissiez la fonction désirée entre upper, lower, title ou clean: ")
 
 if fc == "upper":
